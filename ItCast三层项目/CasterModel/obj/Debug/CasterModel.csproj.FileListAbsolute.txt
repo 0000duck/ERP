@@ -1,0 +1,5 @@
+D:\桌面\C#\练习\ItCast三层项目\CasterModel\bin\Debug\CasterModel.dll
+D:\桌面\C#\练习\ItCast三层项目\CasterModel\bin\Debug\CasterModel.pdb
+D:\桌面\C#\练习\ItCast三层项目\CasterModel\obj\Debug\CasterModel.csprojResolveAssemblyReference.cache
+D:\桌面\C#\练习\ItCast三层项目\CasterModel\obj\Debug\CasterModel.dll
+D:\桌面\C#\练习\ItCast三层项目\CasterModel\obj\Debug\CasterModel.pdb

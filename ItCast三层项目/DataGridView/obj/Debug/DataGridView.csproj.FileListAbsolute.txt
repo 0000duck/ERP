@@ -1,0 +1,11 @@
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\bin\Debug\DataGridView.exe.config
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\bin\Debug\DataGridView.exe
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\bin\Debug\DataGridView.pdb
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\bin\Debug\System.Data.SQLite.dll
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\bin\Debug\System.Data.SQLite.xml
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\obj\Debug\DataGridView.csprojResolveAssemblyReference.cache
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\obj\Debug\DataGridView.Form1.resources
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\obj\Debug\DataGridView.Properties.Resources.resources
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\obj\Debug\DataGridView.csproj.GenerateResource.Cache
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\obj\Debug\DataGridView.exe
+D:\桌面\C#\练习\ItCast三层项目\DataGridView\obj\Debug\DataGridView.pdb
