@@ -1,0 +1,12 @@
+D:\桌面\ERP\DAL\bin\Debug\ERP.DAL.dll
+D:\桌面\ERP\DAL\bin\Debug\ERP.DAL.pdb
+D:\桌面\ERP\DAL\bin\Debug\ERP.DBUtility.dll
+D:\桌面\ERP\DAL\bin\Debug\ERP.Model.dll
+D:\桌面\ERP\DAL\bin\Debug\Maticsoft.Common.dll
+D:\桌面\ERP\DAL\bin\Debug\MySql.Data.dll
+D:\桌面\ERP\DAL\bin\Debug\System.Data.SQLite.dll
+D:\桌面\ERP\DAL\bin\Debug\ERP.DBUtility.pdb
+D:\桌面\ERP\DAL\bin\Debug\ERP.Model.pdb
+D:\桌面\ERP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\桌面\ERP\DAL\obj\Debug\ERP.DAL.dll
+D:\桌面\ERP\DAL\obj\Debug\ERP.DAL.pdb

@@ -1,0 +1,7 @@
+D:\桌面\ERP\DBUtility\bin\Debug\ERP.DBUtility.dll
+D:\桌面\ERP\DBUtility\bin\Debug\ERP.DBUtility.pdb
+D:\桌面\ERP\DBUtility\bin\Debug\MySql.Data.dll
+D:\桌面\ERP\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\桌面\ERP\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\桌面\ERP\DBUtility\obj\Debug\ERP.DBUtility.dll
+D:\桌面\ERP\DBUtility\obj\Debug\ERP.DBUtility.pdb

@@ -1,0 +1,5 @@
+D:\桌面\ERP\Model\bin\Debug\ERP.Model.dll
+D:\桌面\ERP\Model\bin\Debug\ERP.Model.pdb
+D:\桌面\ERP\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\桌面\ERP\Model\obj\Debug\ERP.Model.dll
+D:\桌面\ERP\Model\obj\Debug\ERP.Model.pdb
