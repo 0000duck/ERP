@@ -18,6 +18,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,10 +67,173 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Default\StyleSheet.css" />
+    <Content Include="center.html" />
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
+    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Images\top1.gif" />
+    <Content Include="Images\001.gif" />
+    <Content Include="Images\002.gif" />
+    <Content Include="Images\003.gif" />
+    <Content Include="Images\11.gif" />
+    <Content Include="Images\22.gif" />
+    <Content Include="Images\33.gif" />
+    <Content Include="Images\back.gif" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\del.gif" />
+    <Content Include="Images\edt.gif" />
+    <Content Include="Images\first.gif" />
+    <Content Include="Images\go.gif" />
+    <Content Include="Images\last.gif" />
+    <Content Include="Images\login_01.jpg" />
+    <Content Include="Images\login_02.gif" />
+    <Content Include="Images\login_05.gif" />
+    <Content Include="Images\login_06.gif" />
+    <Content Include="Images\login_07.gif" />
+    <Content Include="Images\login_08.gif" />
+    <Content Include="Images\login_09.gif" />
+    <Content Include="Images\login_09_1.gif" />
+    <Content Include="Images\login_10.gif" />
+    <Content Include="Images\login_10_1.gif" />
+    <Content Include="Images\login_11.gif" />
+    <Content Include="Images\login_12.gif" />
+    <Content Include="Images\main_01.gif" />
+    <Content Include="Images\main_02.gif" />
+    <Content Include="Images\main_03.gif" />
+    <Content Include="Images\main_05.gif" />
+    <Content Include="Images\main_06.gif" />
+    <Content Include="Images\main_07.gif" />
+    <Content Include="Images\main_07_1.gif" />
+    <Content Include="Images\main_08.gif" />
+    <Content Include="Images\main_08_1.gif" />
+    <Content Include="Images\main_09.gif" />
+    <Content Include="Images\main_10.gif" />
+    <Content Include="Images\main_10_1.gif" />
+    <Content Include="Images\main_11.gif" />
+    <Content Include="Images\main_11_1.gif" />
+    <Content Include="Images\main_12.gif" />
+    <Content Include="Images\main_12_1.gif" />
+    <Content Include="Images\main_13.gif" />
+    <Content Include="Images\main_13_1.gif" />
+    <Content Include="Images\main_14.gif" />
+    <Content Include="Images\main_14_1.gif" />
+    <Content Include="Images\main_15.gif" />
+    <Content Include="Images\main_16.gif" />
+    <Content Include="Images\main_18.gif" />
+    <Content Include="Images\main_24.gif" />
+    <Content Include="Images\main_26.gif" />
+    <Content Include="Images\main_28.gif" />
+    <Content Include="Images\main_29.gif" />
+    <Content Include="Images\main_34.gif" />
+    <Content Include="Images\main_35.gif" />
+    <Content Include="Images\main_37.gif" />
+    <Content Include="Images\main_41.gif" />
+    <Content Include="Images\main_41_1.gif" />
+    <Content Include="Images\main_43.gif" />
+    <Content Include="Images\main_45.gif" />
+    <Content Include="Images\main_46.gif" />
+    <Content Include="Images\main_48.gif" />
+    <Content Include="Images\main_50.gif" />
+    <Content Include="Images\main_51.gif" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\tab_03.gif" />
+    <Content Include="Images\tab_05.gif" />
+    <Content Include="Images\tab_07.gif" />
+    <Content Include="Images\tab_12.gif" />
+    <Content Include="Images\tab_15.gif" />
+    <Content Include="Images\tab_17.gif" />
+    <Content Include="Images\tab_18.gif" />
+    <Content Include="Images\tab_19.gif" />
+    <Content Include="Images\tab_20.gif" />
+    <Content Include="Images\tb.gif" />
+    <Content Include="Images\topbg.gif" />
+    <Content Include="Images\tree.gif" />
+    <Content Include="Images\user.gif" />
+    <Content Include="left.html" />
+    <Content Include="login.aspx" />
+    <Content Include="login.html" />
+    <Content Include="main.html" />
+    <Content Include="tab.html" />
+    <Content Include="tab\Images\001.gif" />
+    <Content Include="tab\Images\002.gif" />
+    <Content Include="tab\Images\003.gif" />
+    <Content Include="tab\Images\11.gif" />
+    <Content Include="tab\Images\22.gif" />
+    <Content Include="tab\Images\33.gif" />
+    <Content Include="tab\Images\back.gif" />
+    <Content Include="tab\Images\bg.gif" />
+    <Content Include="tab\Images\del.gif" />
+    <Content Include="tab\Images\edt.gif" />
+    <Content Include="tab\Images\first.gif" />
+    <Content Include="tab\Images\go.gif" />
+    <Content Include="tab\Images\last.gif" />
+    <Content Include="tab\Images\login_01.jpg" />
+    <Content Include="tab\Images\login_02.gif" />
+    <Content Include="tab\Images\login_05.gif" />
+    <Content Include="tab\Images\login_06.gif" />
+    <Content Include="tab\Images\login_07.gif" />
+    <Content Include="tab\Images\login_08.gif" />
+    <Content Include="tab\Images\login_09.gif" />
+    <Content Include="tab\Images\login_09_1.gif" />
+    <Content Include="tab\Images\login_10.gif" />
+    <Content Include="tab\Images\login_10_1.gif" />
+    <Content Include="tab\Images\login_11.gif" />
+    <Content Include="tab\Images\login_12.gif" />
+    <Content Include="tab\Images\main_01.gif" />
+    <Content Include="tab\Images\main_02.gif" />
+    <Content Include="tab\Images\main_03.gif" />
+    <Content Include="tab\Images\main_05.gif" />
+    <Content Include="tab\Images\main_06.gif" />
+    <Content Include="tab\Images\main_07.gif" />
+    <Content Include="tab\Images\main_07_1.gif" />
+    <Content Include="tab\Images\main_08.gif" />
+    <Content Include="tab\Images\main_08_1.gif" />
+    <Content Include="tab\Images\main_09.gif" />
+    <Content Include="tab\Images\main_10.gif" />
+    <Content Include="tab\Images\main_10_1.gif" />
+    <Content Include="tab\Images\main_11.gif" />
+    <Content Include="tab\Images\main_11_1.gif" />
+    <Content Include="tab\Images\main_12.gif" />
+    <Content Include="tab\Images\main_12_1.gif" />
+    <Content Include="tab\Images\main_13.gif" />
+    <Content Include="tab\Images\main_13_1.gif" />
+    <Content Include="tab\Images\main_14.gif" />
+    <Content Include="tab\Images\main_14_1.gif" />
+    <Content Include="tab\Images\main_15.gif" />
+    <Content Include="tab\Images\main_16.gif" />
+    <Content Include="tab\Images\main_18.gif" />
+    <Content Include="tab\Images\main_24.gif" />
+    <Content Include="tab\Images\main_26.gif" />
+    <Content Include="tab\Images\main_28.gif" />
+    <Content Include="tab\Images\main_29.gif" />
+    <Content Include="tab\Images\main_34.gif" />
+    <Content Include="tab\Images\main_35.gif" />
+    <Content Include="tab\Images\main_37.gif" />
+    <Content Include="tab\Images\main_41.gif" />
+    <Content Include="tab\Images\main_41_1.gif" />
+    <Content Include="tab\Images\main_43.gif" />
+    <Content Include="tab\Images\main_45.gif" />
+    <Content Include="tab\Images\main_46.gif" />
+    <Content Include="tab\Images\main_48.gif" />
+    <Content Include="tab\Images\main_50.gif" />
+    <Content Include="tab\Images\main_51.gif" />
+    <Content Include="tab\Images\next.gif" />
+    <Content Include="tab\Images\tab_03.gif" />
+    <Content Include="tab\Images\tab_05.gif" />
+    <Content Include="tab\Images\tab_07.gif" />
+    <Content Include="tab\Images\tab_12.gif" />
+    <Content Include="tab\Images\tab_15.gif" />
+    <Content Include="tab\Images\tab_17.gif" />
+    <Content Include="tab\Images\tab_18.gif" />
+    <Content Include="tab\Images\tab_19.gif" />
+    <Content Include="tab\Images\tab_20.gif" />
+    <Content Include="tab\Images\tb.gif" />
+    <Content Include="tab\Images\topbg.gif" />
+    <Content Include="tab\Images\tree.gif" />
+    <Content Include="tab\Images\user.gif" />
+    <Content Include="tab\tab.html" />
+    <Content Include="top.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,8 +252,8 @@
       <DependentUpon>copyright.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -92,18 +261,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="MasterPage.master.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterPage.master.designer.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Default.aspx" />
-    <Content Include="Style.css" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\CheckRight.ascx.resx">
@@ -130,11 +302,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage.master" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="Components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tab\Images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -161,6 +339,10 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

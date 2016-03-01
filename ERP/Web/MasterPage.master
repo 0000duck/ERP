@@ -1,41 +1,116 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ERP.Web.MasterPage" %>
-<%@ Register Src="~/Controls/copyright.ascx" TagName="copyright" TagPrefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>模板页</title>
-    <link href="/style.css" type="text/css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div align="center">
-        <table cellspacing="0" cellpadding="5" width="700" border="0">
-            <tr>
-                <td bgcolor='<%=Application[Session["Style"].ToString()+"xtable_bgcolor"]%>'>
-                    <table cellspacing="0" bordercolordark='<%=Application[Session["Style"].ToString()+"xtable_bordercolordark"]%>'
-                        bordercolorlight='<%=Application[Session["Style"].ToString()+"xtable_bordercolorlight"]%>'
-                        cellpadding="5" width="100%" border="1">
-                        <tr bgcolor="#e4e4e4">
-                            <td bgcolor='<%=Application[Session["Style"].ToString()+"xtable_titlebgcolor"]%>'
-                                height="22" align="left">
-                                <%=TabTitle%>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="22">
-                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                                </asp:ContentPlaceHolder>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <uc1:copyright ID="copyright1" runat="server" />
+        <!--顶部top-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" height="83">
+  <tr>
+    <td height="57" background="images/main_02.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="110" height="57" background="images/main_01.gif">&nbsp;</td>
+        <td><table width="743" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="28" background="images/main_03.gif">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="29"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="61" height="29" background="images/main_06.gif">&nbsp;</td>
+                <td width="72"><a href="#"><img src="images/main_07.gif" name="Image1" width="72" height="29" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/main_07_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="72"><a href="#"><img src="images/main_08.gif" name="Image2" width="72" height="29" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/main_08_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="292" background="images/main_09.gif">&nbsp;</td>
+                <td width="40"><a href="#"><img src="images/main_10.gif" name="Image3" width="40" height="29" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/main_10_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="44"><a href="#"><img src="images/main_11.gif" name="Image4" width="44" height="29" border="0" id="Image4" onmouseover="MM_swapImage('Image4','','images/main_11_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="43"><a href="#"><img src="images/main_12.gif" name="Image5" width="43" height="29" border="0" id="Image5" onmouseover="MM_swapImage('Image5','','images/main_12_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="44"><a href="#"><img src="images/main_13.gif" name="Image6" width="44" height="29" border="0" id="Image6" onmouseover="MM_swapImage('Image6','','images/main_13_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="39"><a href="#"><img src="images/main_14.gif" name="Image7" width="39" height="29" border="0" id="Image7" onmouseover="MM_swapImage('Image7','','images/main_14_1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                <td width="36"><img src="images/main_15.gif" width="36" height="29" /></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="102" background="images/main_05.gif">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="26" background="images/main_18.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="180" height="26" background="images/main_16.gif">&nbsp;</td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="76" height="23" valign="bottom"><table width="74" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="18" style="background:url(images/topbg.gif); border:solid 1px #a6d0e7; font-size:12px; color:#2b7dbb;"><div align="center"><img src="images/001.gif" width="10" height="10" />系统管理</div></td>
+              </tr>
+            </table></td>
+            <td width="76" valign="bottom"><table width="74" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="18" style="background:url(images/topbg.gif); border:solid 1px #a6d0e7;font-size:12px; color:#2b7dbb;"><div align="center"><img src="images/002.gif" width="10" height="10" />方法管理</div></td>
+              </tr>
+            </table></td>
+            <td width="76" valign="bottom"><table width="74" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="18" style="background:url(images/topbg.gif); border:solid 1px #a6d0e7;font-size:12px; color:#2b7dbb;"><div align="center"><img src="images/003.gif" width="10" height="10" />用户管理</div></td>
+              </tr>
+            </table></td>
+            <td valign="bottom">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="200"><img src="images/user.gif" width="10" height="10" /> <span class="welcome">欢迎您:admin  角色:管理员</span></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+        <!--顶部top End-->
+        <!--主体center-->
+        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>tab.html
+    <td width="171" id=frmTitle noWrap name="fmTitle" align="center" valign="top">
+	<iframe name="I1" height="100%" width="171" src="left.html" border="0" frameborder="0" scrolling="no">
+	浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe>	</td>
+    <td width="9" valign="middle"  bgcolor="#0a5c8e" onclick=switchSysBar()><SPAN class=navPoint 
+id=switchPoint title=关闭/打开左栏><img src="images/main_41.gif" name="img1" width=9 height=52 id=img1></SPAN></td>
+    <td align="center" valign="top"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+      <tr>
+        <td height="8" style=" line-height:8px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+          <tr>
+            <td width="14"><img src="images/main_24.gif" width="14" height="8"></td>
+            <td background="images/main_26.gif" style="line-height:8px;">&nbsp;</td>
+            <td width="7"><img src="images/main_28.gif" width="7" height="8"></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+          <tr>
+            <td><iframe name="I1" height="100%" width="100%" src="tab.html" border="0" frameborder="0" scrolling="no"> 浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe></td>
+            <td width="3" style="width:3px; background:#0a5c8e;">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="12" style="line-height:12px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+          <tr>
+            <td width="14" height="12"><img src="images/main_46.gif" width="14" height="12"></td>
+            <td background="images/main_48.gif" style="line-height:12px;">&nbsp;</td>
+            <td width="7"><img src="images/main_50.gif" width="7" height="12"></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+        <!--主体center End-->
     </form>
 </body>
 </html>
