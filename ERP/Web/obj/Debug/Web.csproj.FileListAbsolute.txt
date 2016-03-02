@@ -40,7 +40,7 @@ C:\Users\songd_000\bali\ERP\Web\bin\ERP.DBUtility.pdb
 C:\Users\songd_000\bali\ERP\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 C:\Users\songd_000\bali\ERP\Web\obj\Debug\ERP.Web.Controls.CheckRight.resources
 C:\Users\songd_000\bali\ERP\Web\obj\Debug\ERP.Web.Controls.CopyRight1.resources
-C:\Users\songd_000\bali\ERP\Web\obj\Debug\ERP.Web.Global.resources
 C:\Users\songd_000\bali\ERP\Web\obj\Debug\Web.csproj.GenerateResource.Cache
 C:\Users\songd_000\bali\ERP\Web\obj\Debug\ERP.Web.dll
 C:\Users\songd_000\bali\ERP\Web\obj\Debug\ERP.Web.pdb
+C:\Users\songd_000\bali\ERP\Web\obj\Debug\ERP.Web.Global.resources
