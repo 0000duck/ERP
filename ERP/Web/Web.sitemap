@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode title="ERP-首页"  description="">
+        <siteMapNode url="入库管理" title="入库管理"  description="入库单填写" >
+            <siteMapNode  title="采购入库" />
+            <siteMapNode  title="委外入库" />
+            <siteMapNode  title="其他入库" />
+        </siteMapNode>
+        <siteMapNode url="出库管理" title="出库管理"  description="出库单填写" >
+            <siteMapNode  title="生产领料" />
+            <siteMapNode  title="销售出库" />
+            <siteMapNode  title="其他出库" />
+        </siteMapNode>
+
+        <siteMapNode url="文仓库维护" title="仓库维护"  description="" >
+            <siteMapNode  title="库存查询" />
+            <siteMapNode  title="仓库管理" roles="管理员"/>
+            <siteMapNode  title="文件搜索" />
+        </siteMapNode>
+
+        <siteMapNode url="系统管理" title="系统管理"  description="" roles="管理员">
+            <siteMapNode  title="角色管理" />
+            <siteMapNode  title="登录日志" />
+            <siteMapNode title="操作日志"/>
+        </siteMapNode>
+
+    </siteMapNode>
+</siteMap>
