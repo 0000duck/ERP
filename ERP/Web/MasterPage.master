@@ -72,34 +72,141 @@
   </tr>
 </table>
         <!--顶部top End-->
+
         <!--主体center-->
         <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>tab.html
-    <td width="171" id=frmTitle noWrap name="fmTitle" align="center" valign="top">
-	<iframe name="I1" height="100%" width="171" src="left.html" border="0" frameborder="0" scrolling="no">
-	浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe>	</td>
-    <td width="9" valign="middle"  bgcolor="#0a5c8e" onclick=switchSysBar()><SPAN class=navPoint 
-id=switchPoint title=关闭/打开左栏><img src="images/main_41.gif" name="img1" width=9 height=52 id=img1></SPAN></td>
-    <td align="center" valign="top"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+        <tr>
+            <td width="171" id="frmTitle" nowrap name="fmTitle" align="center" valign="top">
+                <!-- 左侧菜单 -->
+                <table width="171" height="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td valign="top">
+                            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                            </asp:TreeView>
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+                <!-- 左侧菜单 End -->
+
+            <!--关闭/打开左侧菜单-->
+    <td width="9" valign="middle"  bgcolor="#0a5c8e" onclick="switchSysBar()">
+        <span class="navPoint" id="switchPoint" title="关闭/打开左栏">
+        <img src="images/main_41.gif" name="img1" width="9" height="52" id="img1"></span>
+    </td>
+             <!--关闭/打开左侧菜单-->
+
+    <td valign="top">
+        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
       <tr>
-        <td height="8" style=" line-height:8px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+        <td height="8" style=" line-height:8px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
           <tr>
-            <td width="14"><img src="images/main_24.gif" width="14" height="8"></td>
+            <td width="14">
+                <img src="images/main_24.gif" width="14" height="8">
+            </td>
             <td background="images/main_26.gif" style="line-height:8px;">&nbsp;</td>
             <td width="7"><img src="images/main_28.gif" width="7" height="8"></td>
           </tr>
         </table></td>
       </tr>
       <tr>
-        <td><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+        <td>
+            <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
           <tr>
-            <td><iframe name="I1" height="100%" width="100%" src="tab.html" border="0" frameborder="0" scrolling="no"> 浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe></td>
+            <td>
+                <!--主内容区-->
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="30" background="images/tab_05.gif">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="12" height="30">
+                                                                <img  runat="server" src="~/images/tab_03.gif" width="12" height="30" />
+                                                            </td>
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="46%" valign="middle">
+                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td width="16">
+                                                                                        <div align="center">
+                                                                                            <img src="images/tb.gif" width="16" height="16" /></div>
+                                                                                    </td>
+                                                                                    <td   >
+                                                                                      你当前的位置 ：SiteMapPath系统管理-数据列表
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td width="54%">
+                                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolderOperationMenu" runat="server">
+                                                                            </asp:ContentPlaceHolder>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td width="16">
+                                                                <img src="images/tab_07.gif" width="16" height="30" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="8" background="images/tab_12.gif">
+                                                                &nbsp;
+                                                            </td>
+                                                            <td>
+                                                                <!-- 真的子页面必须实现的部分 -->
+                                                                
+                                                                <asp:ContentPlaceHolder ID="ContentPlaceHolderRealContent" runat="server">
+                                                                </asp:ContentPlaceHolder>
+                                                                
+                                                                   <!-- 真的子页面必须实现的部分 end -->
+
+                                                                </td>
+                                                            <td width="8" background="images/tab_15.gif">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="35" background="images/tab_19.gif">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="12" height="35">
+                                                                <img src="images/tab_18.gif" width="12" height="35" />
+                                                            </td>
+                                                            <td>
+                                                                <asp:ContentPlaceHolder ID="ContentPlaceHolderBottomNav" runat="server">
+                                                                </asp:ContentPlaceHolder>
+                                                            </td>
+                                                            <td width="16">
+                                                                <img src="images/tab_20.gif" width="16" height="35" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                <!--主内容区 end-->
+            </td>
+
             <td width="3" style="width:3px; background:#0a5c8e;">&nbsp;</td>
           </tr>
         </table></td>
       </tr>
       <tr>
-        <td height="12" style="line-height:12px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+        <td height="12" style="line-height:12px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
           <tr>
             <td width="14" height="12"><img src="images/main_46.gif" width="14" height="12"></td>
             <td background="images/main_48.gif" style="line-height:12px;">&nbsp;</td>
