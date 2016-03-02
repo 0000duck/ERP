@@ -13,5 +13,10 @@ namespace ERP.Web
         {
 
         }
+
+        protected void ImageButtonLogin_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

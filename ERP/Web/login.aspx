@@ -46,6 +46,7 @@ function MM_swapImage() { //v3.0
 </head>
 
 <body onLoad="MM_preloadImages('images/login_09_1.gif','images/login_10_1.gif')">
+<form id="form1" runat="server">
 <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td bgcolor="#02395f">&nbsp;</td>
@@ -64,11 +65,33 @@ function MM_swapImage() { //v3.0
                 <td height="81" background="images/login_06.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td width="24%"><div align="center"><font style="height:1;font-size:9pt; color:#bfdbeb;filter:glow(color=#1070a3,strength=1)">用户</font></div></td>
-                    <td width="76%" height="25"><input type="text" name="textfield"  style="width:125px; height:20px; background:#32a2e3; font-size:12px; border:solid 1px #0468a7; color:#14649f;"></td>
+                    <td width="76%" height="25">
+                        <!--用户名input原位置-->
+                        <!--input type="text" name="textfield"  style="width:125px; height:20px; background:#32a2e3; font-size:12px; border:solid 1px #0468a7; color:#14649f;"-->
+                        
+                        <!--密码UserName新位置-->
+                        <asp:TextBox ID="TextBoxUserName" runat="server" style="width:125px; height:20px; background:#32a2e3; 
+                        font-size:12px; border:solid 1px #0468a7; color: white; font-weight:bold;" ></asp:TextBox>
+                        <!--密码UserName新位置end-->
+
+                        <!--用户名input原位置end-->
+                    </td>
+                        
                   </tr>
                   <tr>
                     <td><div align="center"><font style="height:1;font-size:9pt; color:#bfdbeb;filter:glow(color=#1070a3,strength=1)">密码</font></div></td>
-                    <td height="25"><input type="password" name="textfield2"  style="width:125px; height:20px; background:#32a2e3; font-size:12px; border:solid 1px #0468a7; color:#14649f;"></td>
+                        <!--密码input位置-->
+                      <td height="25">
+                        <!--input type="password" name="textfield2"  style="width:125px; height:20px; background:#32a2e3; font-size:12px; border:solid 1px #0468a7; color:#14649f;"-->
+                        
+                        <!--密码TextBox新位置-->
+                        <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password"
+                            style="width:125px; height:20px; background:#32a2e3; font-size:12px; border:solid 1px #0468a7; color: white; font-weight:bold;"
+                            >
+                        </asp:TextBox>
+                        <!--密码TextBox新位置end-->
+                    </td>
+                        <!--密码input位置end-->
                   </tr>
                 </table></td>
               </tr>
@@ -76,8 +99,32 @@ function MM_swapImage() { //v3.0
                 <td height="35"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td width="50" height="35"><img src="images/login_08.gif" width="50" height="35"></td>
-                    <td width="46"><a href="#"><img src="images/login_09.gif" name="Image1" width="46" height="35" border="0" id="Image1" onMouseOver="MM_swapImage('Image1','','images/login_09_1.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
-                    <td width="45"><a href="#"><img src="images/login_10.gif" name="Image2" width="45" height="35" border="0" id="Image2" onMouseOver="MM_swapImage('Image2','','images/login_10_1.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+                    <td width="46">
+                        <!--登录ImageButton-->
+                        <asp:ImageButton ImageUrl="~/images/login_09.gif" ID="ImageButtonLogin" runat="server" 
+                            style="width:46px; height:35px; border:0;"
+                            onmouseover="MM_swapImage(this.id,'','images/login_09_1.gif',1)"
+                            onmouseout="MM_swapImgRestore()" onclick="ImageButtonLogin_Click"
+                             />
+                        <!--登录ImageButton end-->
+
+                        <!--登录HTML button原位置-->
+                        <!--
+                        <a href="#"> 
+                        <img src="images/login_09.gif" name="Image1" width="46" height="35" border="0" id="Image1" onMouseOver="MM_swapImage('Image1','','images/login_09_1.gif',1)" onMouseOut="MM_swapImgRestore()">
+                        </a>
+                        -->
+                        <!--登录HTML button原位置end-->
+
+                    </td>
+                    <td width="45">
+                    <!--重置HTML button原位置-->
+                    <a href="#" onclick="RestForm();">
+                        <img src="images/login_10.gif" name="Image2" width="45" height="35" border="0" id="Image2" 
+                        onmouseover="MM_swapImage('Image2','','images/login_10_1.gif',1)" onmouseout="MM_swapImgRestore()">
+                    </a>
+                    <!--重置HTML button原位置end-->
+                    </td>
                     <td width="33"><img src="images/login_11.gif" width="33" height="35"></td>
                   </tr>
                 </table></td>
@@ -96,5 +143,16 @@ function MM_swapImage() { //v3.0
     <td bgcolor="#02609c">&nbsp;</td>
   </tr>
 </table>
+</form>
+
+    <script type="text/javascript">
+    function RestForm()
+    {
+    var pwdid = '<%= TextBoxPassword.ClientID %>';
+    document.getElementById(pwdid).value="";
+    
+    document.getElementById("<%= TextBoxUserName.ClientID %>").value="";
+    }
+    </script>
 </body>
 </html>
