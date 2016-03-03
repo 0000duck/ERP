@@ -1,0 +1,7 @@
+D:\桌面\ERP2008\DBUtility\bin\Debug\ERP.DBUtility.dll
+D:\桌面\ERP2008\DBUtility\bin\Debug\ERP.DBUtility.pdb
+D:\桌面\ERP2008\DBUtility\bin\Debug\MySql.Data.dll
+D:\桌面\ERP2008\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\桌面\ERP2008\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\桌面\ERP2008\DBUtility\obj\Debug\ERP.DBUtility.dll
+D:\桌面\ERP2008\DBUtility\obj\Debug\ERP.DBUtility.pdb
