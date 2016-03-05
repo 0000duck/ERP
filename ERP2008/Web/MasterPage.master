@@ -6,6 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+<script src="js/prototype.lite.js" type="text/javascript" ></script>
+<script src="js/moo.fx.js" type="text/javascript"></script>
+<script src="js/moo.fx.pack.js" type="text/javascript"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -81,8 +84,46 @@
                 <table width="171" height="100%" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td valign="top">
-                            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
-                            </asp:TreeView>
+                            <asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows">
+            <ParentNodeStyle Font-Bold="False" />
+            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+            <SelectedNodeStyle Font-Underline="True" 
+                HorizontalPadding="0px" VerticalPadding="0px" ForeColor="#5555DD" />
+            <Nodes>
+                <asp:TreeNode Text="ERP物料管理系统" Value="管理员操作">
+                    <asp:TreeNode Text="入库管理" Value="入库管理">
+                        <asp:TreeNode NavigateUrl="~/AddInWarehouse.aspx" Text="采购入库" Value="采购入库">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/AddInwarehouse.aspx" Text="外委入库" Value="外委入库">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="出库管理" Value="出库管理">
+                        <asp:TreeNode NavigateUrl="~/AddInWarehouse.aspx" Text="生产领料" Value="生产领料">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/AddInwarehouse.aspx" Text="销售出库" Value="销售出库">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="库存管理" Value="库存管理">
+                        <asp:TreeNode NavigateUrl="~/addstoret.aspx" Text="查看库存" Value="查看库存">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="仓库管理" Value="仓库管理">
+                        <asp:TreeNode NavigateUrl="~/addstoret.aspx" Text="修改仓库信息" Value="修改仓库信息">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="人员管理" Value="人员管理">
+                        <asp:TreeNode NavigateUrl="~/addstoret.aspx" Text="人员管理" Value="人员管理">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/AlterPassword1.aspx" Text="修改密码" Value="修改密码">
+                    </asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/login.aspx" Text="登录界面" Value="返回登录界面">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+            <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" 
+                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+        </asp:TreeView>
                             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
                         </td>
                     </tr>
@@ -123,7 +164,7 @@
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
                                                             <td width="12" height="30">
-                                                                <img  runat="server" src="~/images/tab_03.gif" width="12" height="30" />
+                                                                <img  runat="server" src="images/tab_03.gif" width="12" height="30" />
                                                             </td>
                                                             <td>
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">

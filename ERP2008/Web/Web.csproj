@@ -120,6 +120,13 @@
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddInWarehouse.aspx.cs">
+      <DependentUpon>AddInWarehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddInWarehouse.aspx.designer.cs">
+      <DependentUpon>AddInWarehouse.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
@@ -248,7 +255,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Thumbs.db" />
+    <None Include="img\2.psd" />
+    <None Include="img\guize2.psd" />
+    <None Include="img\未标题-1.psd" />
+    <None Include="img\未标题-3.psd" />
     <Content Include="Images\Web.config" />
+    <Content Include="AddInWarehouse.aspx" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\13.jpg" />
+    <Content Include="img\14.jpg" />
+    <Content Include="img\15.jpg" />
+    <Content Include="img\16.jpg" />
+    <Content Include="img\17.jpg" />
+    <Content Include="img\2.jpg" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\5.jpg" />
+    <Content Include="img\6.jpg" />
+    <Content Include="img\7.gif" />
+    <Content Include="img\7.jpg" />
+    <Content Include="img\8.jpg" />
+    <Content Include="img\9.jpg" />
+    <Content Include="img\guize1.jpg" />
+    <Content Include="img\guize2.jpg" />
+    <Content Include="img\xuqiu1.jpg" />
+    <Content Include="img\xuqiu2.jpg" />
+    <Content Include="img\未标题-1.jpg" />
+    <Content Include="img\添加货物信息.jpg" />
+    <Content Include="img\货物信息维护.jpg" />
+    <Content Include="js\moo.fx.js" />
+    <Content Include="js\moo.fx.pack.js" />
+    <Content Include="js\prototype.lite.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />
