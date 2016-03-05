@@ -10,3 +10,15 @@ D:\桌面\ERP2008\DAL\bin\Debug\ERP.Model.pdb
 D:\桌面\ERP2008\DAL\obj\Debug\ResolveAssemblyReference.cache
 D:\桌面\ERP2008\DAL\obj\Debug\ERP.DAL.dll
 D:\桌面\ERP2008\DAL\obj\Debug\ERP.DAL.pdb
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\ERP.DAL.dll
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\ERP.DAL.pdb
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\ERP.DBUtility.dll
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\ERP.Model.dll
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\Maticsoft.Common.dll
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\MySql.Data.dll
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\System.Data.SQLite.dll
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\ERP.DBUtility.pdb
+C:\Users\songd_000\bali\ERP2008\DAL\bin\Debug\ERP.Model.pdb
+C:\Users\songd_000\bali\ERP2008\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\songd_000\bali\ERP2008\DAL\obj\Debug\ERP.DAL.dll
+C:\Users\songd_000\bali\ERP2008\DAL\obj\Debug\ERP.DAL.pdb
