@@ -13,8 +13,7 @@
     <table   cellpadding="0" cellspacing="0" class="style1">
 <tr>
     <td>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        查询方式：
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 查询方式：
         <asp:DropDownList ID="DropDownListMethodSelect" runat="server" AutoPostBack="True" 
                     onselectedindexchanged="DropDownListMethodSelect_SelectedIndexChanged" Height="20px" 
                     Width="125px">

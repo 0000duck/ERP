@@ -126,6 +126,20 @@
     <Compile Include="MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
+    <Compile Include="MemberChangePassword.aspx.cs">
+      <DependentUpon>MemberChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberChangePassword.aspx.designer.cs">
+      <DependentUpon>MemberChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRegister.aspx.cs">
+      <DependentUpon>MemberRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberRegister.aspx.designer.cs">
+      <DependentUpon>MemberRegister.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AddInWarehouse.aspx.cs">
       <DependentUpon>AddInWarehouse.aspx</DependentUpon>
@@ -133,6 +147,20 @@
     </Compile>
     <Compile Include="AddInWarehouse.aspx.designer.cs">
       <DependentUpon>AddInWarehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseAdd.aspx.cs">
+      <DependentUpon>WarehouseAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseAdd.aspx.designer.cs">
+      <DependentUpon>WarehouseAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseAlter.aspx.cs">
+      <DependentUpon>WarehouseAlter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseAlter.aspx.designer.cs">
+      <DependentUpon>WarehouseAlter.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -294,6 +322,10 @@
     <Content Include="js\moo.fx.js" />
     <Content Include="js\moo.fx.pack.js" />
     <Content Include="js\prototype.lite.js" />
+    <Content Include="MemberChangePassword.aspx" />
+    <Content Include="MemberRegister.aspx" />
+    <Content Include="WarehouseAdd.aspx" />
+    <Content Include="WarehouseAlter.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />

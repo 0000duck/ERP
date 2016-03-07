@@ -108,14 +108,16 @@
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="仓库管理" Value="仓库管理">
-                        <asp:TreeNode NavigateUrl="~/addstoret.aspx" Text="修改仓库信息" Value="修改仓库信息">
+                        <asp:TreeNode NavigateUrl="~/WarehouseAdd.aspx" Text="添加新仓库" Value="添加新仓库 ">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/WarehouseAlter.aspx" Text="修改仓库信息" Value="修改仓库信息">
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="人员管理" Value="人员管理">
-                        <asp:TreeNode NavigateUrl="~/addstoret.aspx" Text="人员管理" Value="人员管理">
+                        <asp:TreeNode NavigateUrl="~/MemberRegister.aspx" Text="人员管理" Value="人员管理">
                         </asp:TreeNode>
-                    </asp:TreeNode>
-                    <asp:TreeNode NavigateUrl="~/AlterPassword1.aspx" Text="修改密码" Value="修改密码">
+                        <asp:TreeNode NavigateUrl="~/MemberChangePassword.aspx" Text="修改密码" Value="修改密码">
+                        </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode NavigateUrl="~/login.aspx" Text="登录界面" Value="返回登录界面">
                     </asp:TreeNode>
