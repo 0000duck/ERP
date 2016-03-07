@@ -36,11 +36,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 
     <table cellpadding="0" cellspacing="0" class="style1">
-    
-        <tr>
-            <td>
-               <!--img src="img/9.jpg"--></td>
-        </tr>
         <tr>
             <td>
                 <table align="center" cellpadding="0" cellspacing="0" class="style1">

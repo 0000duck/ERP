@@ -104,7 +104,7 @@
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="库存管理" Value="库存管理">
-                        <asp:TreeNode NavigateUrl="~/addstoret.aspx" Text="查看库存" Value="查看库存">
+                        <asp:TreeNode NavigateUrl="~/InventoryQuery.aspx" Text="查看库存" Value="查看库存">
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="仓库管理" Value="仓库管理">

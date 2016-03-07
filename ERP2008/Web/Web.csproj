@@ -105,6 +105,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InventoryQuery.aspx.cs">
+      <DependentUpon>InventoryQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryQuery.aspx.designer.cs">
+      <DependentUpon>InventoryQuery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,6 +290,7 @@
     <Content Include="img\未标题-1.jpg" />
     <Content Include="img\添加货物信息.jpg" />
     <Content Include="img\货物信息维护.jpg" />
+    <Content Include="InventoryQuery.aspx" />
     <Content Include="js\moo.fx.js" />
     <Content Include="js\moo.fx.pack.js" />
     <Content Include="js\prototype.lite.js" />
