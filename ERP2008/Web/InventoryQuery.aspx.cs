@@ -23,6 +23,13 @@ namespace ERP.Web
             LoadList();
         }
 
+        private void LoadList()
+        {
+
+            GridView1.DataSource = bll.GetList(strWhere).Tables[0].DefaultView;
+            GridView1.DataBind();
+        }
+
         protected void DropDownListMethodSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (DropDownListMethodSelect.Text=="按物料代码查询")
@@ -48,21 +55,6 @@ namespace ERP.Web
             }
         }
 
-        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            GridView1.PageIndex = e.NewPageIndex;
-            LoadList();
-        }
-
-        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowIndex != -1)
-            {
-                int id = e.Row.RowIndex + 1;
-                e.Row.Cells[0].Text = id.ToString();
-            }
-        }
-
         protected void ButtonQuery_Click(object sender, EventArgs e)
         {
             if (DropDownListMethodSelect.Text=="按物料代码查询")
@@ -83,11 +75,21 @@ namespace ERP.Web
             
         }
 
-        private void LoadList()
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            
-            GridView1.DataSource = bll.GetList(strWhere).Tables[0].DefaultView;
-            GridView1.DataBind();
+            GridView1.PageIndex = e.NewPageIndex;
+            LoadList();
         }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowIndex != -1)
+            {
+                int id = e.Row.RowIndex + 1;
+                e.Row.Cells[0].Text = id.ToString();
+            }
+        }
+
+        
     }
 }

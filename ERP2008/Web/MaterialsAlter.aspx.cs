@@ -13,9 +13,9 @@ using System.Xml.Linq;
 
 namespace ERP.Web
 {
-    public partial class WarehouseAlter : System.Web.UI.Page
+    public partial class MaterialsAlter : System.Web.UI.Page
     {
-        ERP.BLL.Warehouses bll = new ERP.BLL.Warehouses();
+        ERP.BLL.Materials bll = new ERP.BLL.Materials();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,16 +23,14 @@ namespace ERP.Web
             {
                 LoadList();
             }
-            
         }
 
         private void LoadList()
         {
-
             GridView1.DataSource = bll.GetAllList().Tables[0].DefaultView;
             GridView1.DataBind();
         }
- 
+
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int strIDWhere = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
@@ -53,20 +51,21 @@ namespace ERP.Web
 
                 Response.Write("错误信息:" + erro.Message);
             }
-            
         }
-
-
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            ERP.Model.Warehouses model = new ERP.Model.Warehouses();
+            ERP.Model.Materials model = new ERP.Model.Materials();
 
-            model.WID = Convert.ToInt32(((TextBox)GridView1.Rows[e.RowIndex].Cells[0].Controls[0]).Text);
-            model.WName = ((TextBox)GridView1.Rows[e.RowIndex].Cells[1].Controls[0]).Text.ToString();
-            model.WArea = Convert.ToInt32(((TextBox)GridView1.Rows[e.RowIndex].Cells[2].Controls[0]).Text);
-            model.WAddress = ((TextBox)GridView1.Rows[e.RowIndex].Cells[3].Controls[0]).Text.ToString();
-            model.WDescribe = ((TextBox)GridView1.Rows[e.RowIndex].Cells[4].Controls[0]).Text.ToString();
+            model.MID = Convert.ToInt32(((TextBox)GridView1.Rows[e.RowIndex].Cells[0].Controls[0]).Text);
+            model.MCode = Convert.ToInt32(((TextBox)GridView1.Rows[e.RowIndex].Cells[1].Controls[0]).Text);
+            model.MName = ((TextBox)GridView1.Rows[e.RowIndex].Cells[2].Controls[0]).Text.ToString();
+            model.MModel = ((TextBox)GridView1.Rows[e.RowIndex].Cells[3].Controls[0]).Text.ToString();
+            model.MMaterial = ((TextBox)GridView1.Rows[e.RowIndex].Cells[4].Controls[0]).Text.ToString();
+            model.MStandard = ((TextBox)GridView1.Rows[e.RowIndex].Cells[5].Controls[0]).Text.ToString();
+            model.MUnit = ((TextBox)GridView1.Rows[e.RowIndex].Cells[6].Controls[0]).Text.ToString();
+            model.MNumber = Convert.ToInt32(((TextBox)GridView1.Rows[e.RowIndex].Cells[7].Controls[0]).Text);
+            model.WName = ((TextBox)GridView1.Rows[e.RowIndex].Cells[8].Controls[0]).Text.ToString();
 
             try
             {
@@ -87,14 +86,15 @@ namespace ERP.Web
 
                 Response.Write("错误信息:" + erro.Message);
             }
-            
         }
 
-        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        protected void ButtonQuery_Click(object sender, EventArgs e)
         {
-            GridView1.EditIndex = e.NewEditIndex;
-            LoadList();
+            string strWhere = "MName = '" + TextBoxMName.Text.ToString() + "'";
+            GridView1.DataSource = bll.GetList(strWhere).Tables[0].DefaultView;
+            GridView1.DataBind();
         }
+
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             GridView1.PageIndex = e.NewPageIndex;
@@ -107,10 +107,17 @@ namespace ERP.Web
             LoadList();
         }
 
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GridView1.EditIndex = e.NewEditIndex;
+            LoadList();
+        }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

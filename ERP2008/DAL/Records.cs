@@ -45,24 +45,24 @@ namespace ERP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into Records(");
-			strSql.Append("RID,RMCode,RMName,RQuantity,RType,RHander,RTime)");
+			strSql.Append("RMCode,RMName,RQuantity,RType,RHander,RTime)");
 			strSql.Append(" values (");
-			strSql.Append("@RID,@RMCode,@RMName,@RQuantity,@RType,@RHander,@RTime)");
+			strSql.Append("@RMCode,@RMName,@RQuantity,@RType,@RHander,@RTime)");
 			SqlParameter[] parameters = {
-					new SqlParameter("@RID", SqlDbType.Int,4),
+					//new SqlParameter("@RID", SqlDbType.Int,4),
 					new SqlParameter("@RMCode", SqlDbType.Int,4),
 					new SqlParameter("@RMName", SqlDbType.NVarChar,50),
 					new SqlParameter("@RQuantity", SqlDbType.Int,4),
 					new SqlParameter("@RType", SqlDbType.Int,4),
 					new SqlParameter("@RHander", SqlDbType.NVarChar,50),
 					new SqlParameter("@RTime", SqlDbType.DateTime)};
-			parameters[0].Value = model.RID;
-			parameters[1].Value = model.RMCode;
-			parameters[2].Value = model.RMName;
-			parameters[3].Value = model.RQuantity;
-			parameters[4].Value = model.RType;
-			parameters[5].Value = model.RHander;
-			parameters[6].Value = model.RTime;
+			//parameters[0].Value = model.RID;
+			parameters[0].Value = model.RMCode;
+			parameters[1].Value = model.RMName;
+			parameters[2].Value = model.RQuantity;
+			parameters[3].Value = model.RType;
+			parameters[4].Value = model.RHander;
+			parameters[5].Value = model.RTime;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)

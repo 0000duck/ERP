@@ -92,15 +92,15 @@
             <Nodes>
                 <asp:TreeNode Text="ERP物料管理系统" Value="管理员操作">
                     <asp:TreeNode Text="入库管理" Value="入库管理">
-                        <asp:TreeNode NavigateUrl="~/AddInWarehouse.aspx" Text="采购入库" Value="采购入库">
+                        <asp:TreeNode NavigateUrl="~/InventoryIn.aspx" Text="采购入库" Value="采购入库">
                         </asp:TreeNode>
-                        <asp:TreeNode NavigateUrl="~/AddInwarehouse.aspx" Text="外委入库" Value="外委入库">
+                        <asp:TreeNode NavigateUrl="~/InventoryIn.aspx" Text="外委入库" Value="外委入库">
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="出库管理" Value="出库管理">
-                        <asp:TreeNode NavigateUrl="~/AddInWarehouse.aspx" Text="生产领料" Value="生产领料">
+                        <asp:TreeNode NavigateUrl="~/InventoryQuery.aspx" Text="生产领料" Value="生产领料">
                         </asp:TreeNode>
-                        <asp:TreeNode NavigateUrl="~/AddInwarehouse.aspx" Text="销售出库" Value="销售出库">
+                        <asp:TreeNode NavigateUrl="~/InventoryQuery.aspx" Text="销售出库" Value="销售出库">
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="库存管理" Value="库存管理">
@@ -110,7 +110,7 @@
                     <asp:TreeNode Text="物料信息管理" Value="物料信息管理">
                         <asp:TreeNode NavigateUrl="~/MaterialsAdd.aspx" Text="添加新物料" Value="添加新物料">
                         </asp:TreeNode>
-                        <asp:TreeNode NavigateUrl="~/MaterialsAdd.aspx" Text="修改物料信息" Value="修改物料信息">
+                        <asp:TreeNode NavigateUrl="~/MaterialsAlter.aspx" Text="修改物料信息" Value="修改物料信息">
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="仓库管理" Value="仓库管理">

@@ -105,6 +105,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InventoryIn.aspx.cs">
+      <DependentUpon>InventoryIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryIn.aspx.designer.cs">
+      <DependentUpon>InventoryIn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InventoryQuery.aspx.cs">
       <DependentUpon>InventoryQuery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,6 +139,13 @@
     </Compile>
     <Compile Include="MaterialsAdd.aspx.designer.cs">
       <DependentUpon>MaterialsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsAlter.aspx.cs">
+      <DependentUpon>MaterialsAlter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialsAlter.aspx.designer.cs">
+      <DependentUpon>MaterialsAlter.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberChangePassword.aspx.cs">
       <DependentUpon>MemberChangePassword.aspx</DependentUpon>
@@ -324,11 +338,13 @@
     <Content Include="img\未标题-1.jpg" />
     <Content Include="img\添加货物信息.jpg" />
     <Content Include="img\货物信息维护.jpg" />
+    <Content Include="InventoryIn.aspx" />
     <Content Include="InventoryQuery.aspx" />
     <Content Include="js\moo.fx.js" />
     <Content Include="js\moo.fx.pack.js" />
     <Content Include="js\prototype.lite.js" />
     <Content Include="MaterialsAdd.aspx" />
+    <Content Include="MaterialsAlter.aspx" />
     <Content Include="MemberChangePassword.aspx" />
     <Content Include="MemberManage.aspx" />
     <Content Include="MemberRegister.aspx" />
