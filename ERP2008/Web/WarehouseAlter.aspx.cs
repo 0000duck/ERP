@@ -16,7 +16,7 @@ namespace ERP.Web
     public partial class WarehouseAlter : System.Web.UI.Page
     {
         ERP.BLL.Warehouses bll = new ERP.BLL.Warehouses();
-        string strWhere = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -28,7 +28,7 @@ namespace ERP.Web
         private void LoadList()
         {
 
-            GridView1.DataSource = bll.GetList(strWhere).Tables[0].DefaultView;
+            GridView1.DataSource = bll.GetAllList().Tables[0].DefaultView;
             GridView1.DataBind();
         }
 

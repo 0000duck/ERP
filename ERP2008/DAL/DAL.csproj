@@ -119,6 +119,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Materials.cs" />
+    <Compile Include="Membership.cs" />
     <Compile Include="Records.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="Warehouses.cs" />

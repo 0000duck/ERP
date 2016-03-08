@@ -126,12 +126,26 @@
     <Compile Include="MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
+    <Compile Include="MaterialsAdd.aspx.cs">
+      <DependentUpon>MaterialsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialsAdd.aspx.designer.cs">
+      <DependentUpon>MaterialsAdd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MemberChangePassword.aspx.cs">
       <DependentUpon>MemberChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MemberChangePassword.aspx.designer.cs">
       <DependentUpon>MemberChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberManage.aspx.cs">
+      <DependentUpon>MemberManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberManage.aspx.designer.cs">
+      <DependentUpon>MemberManage.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberRegister.aspx.cs">
       <DependentUpon>MemberRegister.aspx</DependentUpon>
@@ -141,13 +155,6 @@
       <DependentUpon>MemberRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AddInWarehouse.aspx.cs">
-      <DependentUpon>AddInWarehouse.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddInWarehouse.aspx.designer.cs">
-      <DependentUpon>AddInWarehouse.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WarehouseAdd.aspx.cs">
       <DependentUpon>WarehouseAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,7 +302,6 @@
     <None Include="img\未标题-1.psd" />
     <None Include="img\未标题-3.psd" />
     <Content Include="Images\Web.config" />
-    <Content Include="AddInWarehouse.aspx" />
     <Content Include="img\1.jpg" />
     <Content Include="img\13.jpg" />
     <Content Include="img\14.jpg" />
@@ -322,7 +328,9 @@
     <Content Include="js\moo.fx.js" />
     <Content Include="js\moo.fx.pack.js" />
     <Content Include="js\prototype.lite.js" />
+    <Content Include="MaterialsAdd.aspx" />
     <Content Include="MemberChangePassword.aspx" />
+    <Content Include="MemberManage.aspx" />
     <Content Include="MemberRegister.aspx" />
     <Content Include="WarehouseAdd.aspx" />
     <Content Include="WarehouseAlter.aspx" />

@@ -10,17 +10,15 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
-using System.Data.SqlClient;
 
-namespace ERP.Web.WareHouseManager
+namespace ERP.Web
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class MaterialsAdd : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
         protected void ButtonSubmit_Click(object sender, EventArgs e)
         {
             ERP.BLL.Materials bll = new ERP.BLL.Materials();
@@ -62,8 +60,7 @@ namespace ERP.Web.WareHouseManager
                 TextBoxMUnit.Text = "";
                 TextBoxMNumber.Text = "";
             }
-            
-        }
 
+        }
     }
 }

@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ERP.Web.WareHouseManager {
+namespace ERP.Web {
     
     
-    public partial class WebForm1 {
+    public partial class MaterialsAdd {
         
         /// <summary>
         /// DropDownList 控件。

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="AddInWarehouse.aspx.cs" Inherits="ERP.Web.WareHouseManager.WebForm1" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="MaterialsAdd.aspx.cs" Inherits="ERP.Web.MaterialsAdd" Title="无标题页" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style type="text/css">
         .style1
@@ -30,12 +30,9 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
-    
-    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
-
-    <table cellpadding="0" cellspacing="0" class="style1">
+<table cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td>
                 <table align="center" cellpadding="0" cellspacing="0" class="style1">

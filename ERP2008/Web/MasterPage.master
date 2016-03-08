@@ -107,6 +107,12 @@
                         <asp:TreeNode NavigateUrl="~/InventoryQuery.aspx" Text="查看库存" Value="查看库存">
                         </asp:TreeNode>
                     </asp:TreeNode>
+                    <asp:TreeNode Text="物料信息管理" Value="物料信息管理">
+                        <asp:TreeNode NavigateUrl="~/MaterialsAdd.aspx" Text="添加新物料" Value="添加新物料">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/MaterialsAdd.aspx" Text="修改物料信息" Value="修改物料信息">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
                     <asp:TreeNode Text="仓库管理" Value="仓库管理">
                         <asp:TreeNode NavigateUrl="~/WarehouseAdd.aspx" Text="添加新仓库" Value="添加新仓库 ">
                         </asp:TreeNode>
@@ -114,7 +120,9 @@
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="人员管理" Value="人员管理">
-                        <asp:TreeNode NavigateUrl="~/MemberRegister.aspx" Text="人员管理" Value="人员管理">
+                        <asp:TreeNode NavigateUrl="~/MemberManage.aspx" Text="查看所有用户" Value="查看所有用户">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/MemberRegister.aspx" Text="注册新用户" Value="注册新用户">
                         </asp:TreeNode>
                         <asp:TreeNode NavigateUrl="~/MemberChangePassword.aspx" Text="修改密码" Value="修改密码">
                         </asp:TreeNode>
