@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="InventoryIn.aspx.cs" Inherits="ERP.Web.InventoryIn" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="InventoryOut.aspx.cs" Inherits="ERP.Web.InventoryOut" Title="无标题页" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+<style type="text/css">
         .style1
         {
             width: 100%;
@@ -18,13 +18,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
-    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+<table cellpadding="0" cellspacing="0" class="style1">
         <tr>
-            <td align="center">
+            <td>
                 <table align="center" cellpadding="0" cellspacing="0" class="style1">
                     <tr>
                         <td align="right" class="style2" height="32">
-                            入库物料名称：</td>
+                            出库物料名称：</td>
                         <td align="left" class="style3">
                             <asp:DropDownList ID="DropDownListMName" runat="server"
                             DataSourceID="SqlDataSourceMName" DataTextField="MName" DataValueField="MName" 
@@ -73,7 +73,7 @@
                 <table align="center" cellpadding="0" cellspacing="0" class="style1">
                     <tr>
                         <td align="right" class="style2" height="32">
-                            入库数量：
+                            出库数量：
                         </td>
                         <td align="left" class="style3">
                             <asp:TextBox ID="TextBoxNumberIn" runat="server"></asp:TextBox>
@@ -81,7 +81,7 @@
                     </tr>
                     <tr>
                         <td align="right" class="style2" height="32">
-                            送货人：
+                            提货人：
                         </td>
                         <td align="left" class="style3">
                             <asp:TextBox ID="TextBoxSenderMan" runat="server" BackColor="Silver" 
@@ -93,10 +93,10 @@
                     
             </td>
         </tr>
-        <tr><td align="center" height="32">
+        <tr><td height="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
             <asp:Button ID="ButtonSubmit" runat="server" Text="提交"  
                 style="height: 26px; width: 40px;" onclick="ButtonSubmit_Click" />
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="reset" name="buttonCancel" id="button" value="重置" />
             
             </td></tr>

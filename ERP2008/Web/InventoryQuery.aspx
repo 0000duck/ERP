@@ -12,7 +12,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
     <table   cellpadding="0" cellspacing="0" class="style1">
 <tr>
-    <td>
+    <td align="center">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 查询方式：
         <asp:DropDownList ID="DropDownListMethodSelect" runat="server" AutoPostBack="True" 
                     onselectedindexchanged="DropDownListMethodSelect_SelectedIndexChanged" Height="20px" 
@@ -55,7 +55,9 @@
         onclick="ButtonQuery_Click" />
     </td>
 </tr>
-
+    </table>
+<br />
+<br />
 <table cellpadding="0" cellspacing="0" class="style1">
                     <tr>
                         <td align="center">
@@ -85,9 +87,10 @@
                         </td>
                     </tr>
                 </table>
+<br />
+<br />
 
-
-    </table>
+    
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>

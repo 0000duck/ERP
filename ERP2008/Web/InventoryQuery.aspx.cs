@@ -20,7 +20,11 @@ namespace ERP.Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadList();
+            if (!IsPostBack)
+            {
+                LoadList();
+            }
+            
         }
 
         private void LoadList()

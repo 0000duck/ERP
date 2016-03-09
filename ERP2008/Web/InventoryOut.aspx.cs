@@ -10,11 +10,10 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
-using System.Data.SqlClient;
 
 namespace ERP.Web
 {
-    public partial class InventoryIn : System.Web.UI.Page
+    public partial class InventoryOut : System.Web.UI.Page
     {
         ERP.BLL.Materials bllMaterials = new ERP.BLL.Materials();
         ERP.BLL.Records bllRecords = new ERP.BLL.Records();
@@ -26,8 +25,8 @@ namespace ERP.Web
             //页面启动，显示所有物料信息
             if (!IsPostBack)
             {
-               LoadList();
-               TextBoxSenderMan.Text = HttpContext.Current.User.Identity.Name.ToString();
+                LoadList();
+                TextBoxSenderMan.Text = HttpContext.Current.User.Identity.Name.ToString();
             }
         }
 
@@ -39,7 +38,7 @@ namespace ERP.Web
 
         protected void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            //点提交后，物料信息数量增加，记录表增加一条记录
+            //点提交后，物料信息数量减少，记录表增加一条记录
             strWhere = "MName = '" + DropDownListMName.Text.ToString() + "'";
 
             try
@@ -49,7 +48,7 @@ namespace ERP.Web
                 modelRecords.RMCode = Convert.ToInt32(dw[1]);
                 modelRecords.RMName = dw[2].ToString();
                 modelRecords.RQuantity = Convert.ToInt32(TextBoxNumberIn.Text);
-                modelRecords.RType = 1;//1指入库，2指出库
+                modelRecords.RType = 2;//1指入库，2指出库
                 modelRecords.RHander = HttpContext.Current.User.Identity.Name.ToString();
                 modelRecords.RTime = Convert.ToDateTime(DateTime.Now.Date.ToString("yyyy-MM-dd"));
 
@@ -62,7 +61,7 @@ namespace ERP.Web
                 modelMaterials.MMaterial = dw[4].ToString();
                 modelMaterials.MStandard = dw[5].ToString();
                 modelMaterials.MUnit = dw[6].ToString();
-                modelMaterials.MNumber = Convert.ToInt32(dw[7]) + Convert.ToInt32(TextBoxNumberIn.Text);
+                modelMaterials.MNumber = Convert.ToInt32(dw[7]) - Convert.ToInt32(TextBoxNumberIn.Text);
                 modelMaterials.WName = dw[8].ToString();
 
                 bool boolRecords = bllRecords.Add(modelRecords);
@@ -70,11 +69,11 @@ namespace ERP.Web
 
                 if (boolRecords && boolMaterials)
                 {
-                    Response.Write("<script language='javascript'>alert('入库信息添加成功！');</script>");
+                    Response.Write("<script language='javascript'>alert('出库信息添加成功！');</script>");
                 }
                 else
                 {
-                    Response.Write("<script language='javascript'>alert('入库信息添加失败！');</script>");
+                    Response.Write("<script language='javascript'>alert('出库信息添加失败！');</script>");
                 }
                 LoadList();
                 TextBoxNumberIn.Text = "";
@@ -84,7 +83,7 @@ namespace ERP.Web
 
                 Response.Write("错误信息:" + erro.Message);
             }
-            
+
         }
 
         protected void ButtonQuery_Click(object sender, EventArgs e)
@@ -113,6 +112,5 @@ namespace ERP.Web
                 e.Row.Cells[0].Text = id.ToString();
             }
         }
-
     }
 }

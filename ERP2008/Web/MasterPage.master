@@ -98,9 +98,15 @@
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="出库管理" Value="出库管理">
-                        <asp:TreeNode NavigateUrl="~/InventoryQuery.aspx" Text="生产领料" Value="生产领料">
+                        <asp:TreeNode NavigateUrl="~/InventoryOut.aspx" Text="生产领料" Value="生产领料">
                         </asp:TreeNode>
-                        <asp:TreeNode NavigateUrl="~/InventoryQuery.aspx" Text="销售出库" Value="销售出库">
+                        <asp:TreeNode NavigateUrl="~/InventoryOut.aspx" Text="销售出库" Value="销售出库">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="出入库信息" Value="出入库信息">
+                        <asp:TreeNode NavigateUrl="~/RecordsIn.aspx" Text="查看入库信息" Value="查看入库信息">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/RecordsOut.aspx" Text="查看出库信息" Value="查看出库信息">
                         </asp:TreeNode>
                     </asp:TreeNode>
                     <asp:TreeNode Text="库存管理" Value="库存管理">
