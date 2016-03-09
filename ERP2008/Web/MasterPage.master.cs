@@ -13,5 +13,11 @@ namespace ERP.Web
         {
             //base.OnLoad(e);
         }
+
+        protected void ImageButtonLogOut_Click(object sender, ImageClickEventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            FormsAuthentication.RedirectToLoginPage("msg=你已经注销可以重新登录");
+        }
     }
 }

@@ -21,11 +21,8 @@
     <table align="center" cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td align="center">
-                <table align="center" cellpadding="0" cellspacing="0" class="style1">
-                    <tr>
-                        <td align="right" class="style2" height="32">
-                            入库物料名称：</td>
-                        <td align="left" class="style3">
+                            入库物料名称：
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:DropDownList ID="DropDownListMName" runat="server"
                             DataSourceID="SqlDataSourceMName" DataTextField="MName" DataValueField="MName" 
                                 onselectedindexchanged="DropDownListMName_SelectedIndexChanged">
@@ -38,19 +35,20 @@
                             ConnectionString="<%$ ConnectionStrings:ERPDB %>" 
                             SelectCommand="SELECT [MName] FROM [Materials]" 
                             ProviderName="<%$ ConnectionStrings:ERPDB.ProviderName %>">
-                            </asp:SqlDataSource>
-                        </td>
-                        <td>
-                            &nbsp;</td>
-                    </tr>
-
-                </table>
-                    <br />
-                           <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                            </asp:SqlDataSource> 
+             </td>
+        </tr>
+    </table>
+    <br />
+    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+    <tr>
+        <td align="center">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
                                 CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" 
                                 onpageindexchanging="GridView1_PageIndexChanging" 
-                                onrowdatabound="GridView1_RowDataBound" PageSize="5" Font-Size="Small">
-                                <RowStyle BackColor="#EFF3FB" />
+                                onrowdatabound="GridView1_RowDataBound" PageSize="5" 
+                Font-Size="X-Large">
+                                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                                 <Columns>
                                     <asp:BoundField HeaderText="序号" />
                                     <asp:BoundField DataField="MCode" HeaderText="物料代码" />
@@ -62,45 +60,51 @@
                                     <asp:BoundField DataField="MNumber" HeaderText="当前数量" />
                                     <asp:BoundField DataField="WName" HeaderText="所在仓库" />
                                 </Columns>
-                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                <EditRowStyle BackColor="#2461BF" />
-                                <AlternatingRowStyle BackColor="White" />
+                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <EditRowStyle BackColor="#999999" />
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                             </asp:GridView>
-                            <br />
-                <table align="center" cellpadding="0" cellspacing="0" class="style1">
-                    <tr>
-                        <td align="right" class="style2" height="32">
-                            入库数量：
-                        </td>
-                        <td align="left" class="style3">
+        </td>
+    </tr>               
+    </table>
+    <br />                
+    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td align="center" >
+                            入库数：
                             <asp:TextBox ID="TextBoxNumberIn" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right" class="style2" height="32">
+            </td>
+         </tr>
+         <tr>
+            <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+         </tr>
+         <tr>
+         <td align="center">
                             送货人：
-                        </td>
-                        <td align="left" class="style3">
                             <asp:TextBox ID="TextBoxSenderMan" runat="server" BackColor="Silver" 
                                 ReadOnly="True"></asp:TextBox>
-                        </td>
-                    </tr>
-                             
-                </table>
-                    
+         </td>
+         </tr>
+         <tr>
+            <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
-        </tr>
-        <tr><td align="center" height="32">
+         </tr>
+         <tr>
+             <td align="center" >          
             <asp:Button ID="ButtonSubmit" runat="server" Text="提交"  
                 style="height: 26px; width: 40px;" onclick="ButtonSubmit_Click" />
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="reset" name="buttonCancel" id="button" value="重置" />
-            
-            </td></tr>
+            </td>
+        </tr>
     </table>
+    
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>

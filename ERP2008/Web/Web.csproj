@@ -243,8 +243,6 @@
     <Content Include="App_Themes\GreenTheme\Default.css" />
     <Content Include="App_Themes\PurpleTheme\Default.css" />
     <Content Include="App_Themes\RedTheme\Default.css" />
-    <Content Include="Web.sitemap" />
-    <Content Include="WebEnglish.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\BlueTheme\Control.skin" />
