@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="RecordsIn.aspx.cs" Inherits="ERP.Web.RecordsIn" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="RecordsOut.aspx.cs" Inherits="ERP.Web.RecordsOut" Title="无标题页" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+<style type="text/css">
         .style1
         {
             width: 100%;
@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
-    <table cellpadding="0" cellspacing="0" class="style1">
+<table cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 查询方式<asp:DropDownList ID="DropDownListMethodSelect" runat="server" AutoPostBack="True" 
@@ -69,8 +69,8 @@
                     </td>
                 </tr>
                 </table>
- 
-<table cellpadding="0" cellspacing="0" class="style1">
+                
+                <table cellpadding="0" cellspacing="0" class="style1">
                     <tr>
                         <td align="center">
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
@@ -82,9 +82,9 @@
                                     <asp:BoundField HeaderText="序号" />
                                     <asp:BoundField DataField="RMCode" HeaderText="物料代码" />
                                     <asp:BoundField DataField="RMName" HeaderText="物料名称" />
-                                    <asp:BoundField DataField="RQuantity" HeaderText="入库量" />
+                                    <asp:BoundField DataField="RQuantity" HeaderText="出库量" />
                                     <asp:BoundField DataField="RHander" HeaderText="经办人" />
-                                    <asp:BoundField DataField="RTime" HeaderText="入库时间"/>
+                                    <asp:BoundField DataField="RTime" HeaderText="出库时间" />
                                 </Columns>
                                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                                 <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
@@ -96,9 +96,6 @@
                         </td>
                     </tr>
                 </table>
-
-
-    
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>

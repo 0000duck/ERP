@@ -22,6 +22,11 @@ namespace ERP.Web
         {
             if (!IsPostBack)
             {
+                DropDownListMethodSelect.Text = "按物料代码查询";
+                Label.Text = "请选择物料代码";
+                DropDownListMCode.Visible = true;
+                DropDownListMName.Visible = false;
+                DropDownListWName.Visible = false;
                 LoadList();
             }
             

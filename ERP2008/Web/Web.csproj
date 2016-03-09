@@ -183,6 +183,13 @@
     <Compile Include="RecordsIn.aspx.designer.cs">
       <DependentUpon>RecordsIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RecordsOut.aspx.cs">
+      <DependentUpon>RecordsOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecordsOut.aspx.designer.cs">
+      <DependentUpon>RecordsOut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WarehouseAdd.aspx.cs">
       <DependentUpon>WarehouseAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -364,6 +371,7 @@
     <Content Include="MemberManage.aspx" />
     <Content Include="MemberRegister.aspx" />
     <Content Include="RecordsIn.aspx" />
+    <Content Include="RecordsOut.aspx" />
     <Content Include="WarehouseAdd.aspx" />
     <Content Include="WarehouseAlter.aspx" />
   </ItemGroup>
