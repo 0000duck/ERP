@@ -10,10 +10,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
+<br />
+<br />
     <table cellspacing="1" class="style1">
     <tr>
-        <td>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td align="center">
             物料名称：<asp:TextBox ID="TextBoxMName" runat="server"></asp:TextBox>&nbsp;&nbsp;&nbsp;
                        <asp:Button ID="ButtonQuery" runat="server" Text="查询" 
                 onclick="ButtonQuery_Click" style="height: 26px" />
@@ -24,10 +25,10 @@
                     onrowcancelingedit="GridView1_RowCancelingEdit" 
                     onrowdeleting="GridView1_RowDeleting" onrowediting="GridView1_RowEditing" 
                     onrowupdating="GridView1_RowUpdating" DataKeyNames="MID" CellPadding="4" 
-                    Font-Size="Small" ForeColor="#003366" HorizontalAlign="Center" 
-                    Width="576px" AllowPaging="True" 
-                    onpageindexchanging="GridView1_PageIndexChanging" PageSize="5">
-                    <RowStyle BackColor="#EFF3FB" />
+                    Font-Size="X-Large" ForeColor="#333333" HorizontalAlign="Center" AllowPaging="True" 
+                    onpageindexchanging="GridView1_PageIndexChanging" PageSize="5" 
+                GridLines="None">
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                     <Columns>
                         <asp:BoundField DataField="MID" HeaderText="序号" >
                         <ControlStyle Width="100px" />
@@ -58,12 +59,12 @@
                         </asp:BoundField>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                     </Columns>
-                    <FooterStyle BackColor="#3399FF" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                    <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                    <EditRowStyle BackColor="#2461BF" />
-                    <AlternatingRowStyle BackColor="White" />
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <EditRowStyle BackColor="#999999" />
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 </asp:GridView>
                 
                 <br />
@@ -71,6 +72,8 @@
         </td>
     </tr>
 </table>
+<br />
+<br />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>

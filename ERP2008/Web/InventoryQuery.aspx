@@ -10,10 +10,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
-    <table   cellpadding="0" cellspacing="0" class="style1">
+<br />
+<br />
+<table   cellpadding="0" cellspacing="0" class="style1">
 <tr>
     <td align="center">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 查询方式：
+         查询方式：
         <asp:DropDownList ID="DropDownListMethodSelect" runat="server" AutoPostBack="True" 
                     onselectedindexchanged="DropDownListMethodSelect_SelectedIndexChanged" Height="20px" 
                     Width="125px">
@@ -64,8 +66,8 @@
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
                                 CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" 
                                 onpageindexchanging="GridView1_PageIndexChanging" 
-                                onrowdatabound="GridView1_RowDataBound" PageSize="5" Font-Size="Small">
-                                <RowStyle BackColor="#EFF3FB" />
+                                onrowdatabound="GridView1_RowDataBound" PageSize="5" Font-Size="X-Large">
+                                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                                 <Columns>
                                     <asp:BoundField HeaderText="序号" />
                                     <asp:BoundField DataField="MCode" HeaderText="物料代码" />
@@ -77,12 +79,12 @@
                                     <asp:BoundField DataField="MNumber" HeaderText="数量" />
                                     <asp:BoundField DataField="WName" HeaderText="所在仓库" />
                                 </Columns>
-                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                <EditRowStyle BackColor="#2461BF" />
-                                <AlternatingRowStyle BackColor="White" />
+                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <EditRowStyle BackColor="#999999" />
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                             </asp:GridView>
                         </td>
                     </tr>

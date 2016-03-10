@@ -32,6 +32,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
+    <br />
+    <br />
     <table cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td>
@@ -46,9 +48,13 @@
                                 ID="RequiredFieldValidatorTextBoxMCode" runat="server" ErrorMessage="不能为空!" 
                                 ControlToValidate="TextBoxWName" Font-Size="Small"></asp:RequiredFieldValidator>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
+                    <tr>
+            <td>
+            &nbsp;
+            </td>
+        </tr>
                     <tr>
                         <td align="right" class="style2" height="32">
                             仓库面积：</td>
@@ -58,9 +64,13 @@
                                 ID="RequiredFieldValidatorTextBoxWArea" runat="server" ErrorMessage="不能为空!" 
                                 ControlToValidate="TextBoxWArea" Font-Size="Small"></asp:RequiredFieldValidator>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
+                    <tr>
+            <td>
+            &nbsp;
+            </td>
+        </tr>
                     <tr>
                         <td align="right" class="style2" height="32">
                             仓库地址：</td>
@@ -70,9 +80,13 @@
                                 ID="RequiredFieldValidatorTextBoxWAddress" runat="server" ErrorMessage="不能为空!" 
                                 ControlToValidate="TextBoxWAddress" Font-Size="Small"></asp:RequiredFieldValidator>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
+                    <tr>
+            <td>
+            &nbsp;
+            </td>
+        </tr>
                     <tr>
                         <td align="right" class="style2" height="32">
                             仓库描述：</td>
@@ -82,15 +96,29 @@
                                 ID="RequiredFieldValidatorTextBoxWDescribe" runat="server" ErrorMessage="不能为空!" 
                                 ControlToValidate="TextBoxWDescribe" Font-Size="Small"></asp:RequiredFieldValidator>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
 
                     </table>
                     
             </td>
         </tr>
-        <tr><td height="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        <tr>
+            <td>
+            &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+            &nbsp;
+            </td>
+        </tr>
+        <tr>
+        <td height="32" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="ButtonSubmit" runat="server" Text="提交"  
                 style="height: 26px; width: 40px;" onclick="ButtonSubmit_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -98,6 +126,8 @@
             
             </td></tr>
     </table>
+    <br />
+    <br />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>

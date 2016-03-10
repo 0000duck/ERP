@@ -135,8 +135,9 @@ function MM_swapImage() { //v3.0
         </table></td>
       </tr>
       <tr>
-        <td height="160" background="images/login_12.gif">
-            <asp:Label ID="LabelInfo" runat="server" ForeColor="White" Text="CopyRight@宋东林 2016-2025"></asp:Label>
+        <td align="center" height="160" background="images/login_12.gif">
+            <asp:Label ID="LabelInfo" runat="server" ForeColor="White" Text="宋东林毕业设计" 
+                Font-Names="微軟正黑體" Font-Size="Small"></asp:Label>
           </td>
       </tr>
     </table></td>

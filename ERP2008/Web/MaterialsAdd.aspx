@@ -32,9 +32,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
+<br />
+<br />
 <table cellpadding="0" cellspacing="0" class="style1">
         <tr>
-            <td>
+            <td >
                 <table align="center" cellpadding="0" cellspacing="0" class="style1">
                     <tr>
                         <td align="right" class="style2" height="32">
@@ -50,8 +52,7 @@
                             ProviderName="<%$ ConnectionStrings:ERPDB.ProviderName %>">
                             </asp:SqlDataSource>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style2" height="32">
@@ -62,8 +63,7 @@
                                 ID="RequiredFieldValidatorTextBoxMCode" runat="server" ErrorMessage="不能为空!" 
                                 ControlToValidate="TextBoxMCode" Font-Size="Small"></asp:RequiredFieldValidator>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style4">
@@ -74,8 +74,7 @@
                                 ID="RequiredFieldValidatorTextBoxMName" runat="server" ErrorMessage="不能为空!" 
                                 ControlToValidate="TextBoxMName" Font-Size="Small"></asp:RequiredFieldValidator>
                         </td>
-                        <td align="left" class="style6">
-                            </td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style2">
@@ -83,8 +82,7 @@
                         <td align="left" class="style3" height="32">
                             <asp:TextBox ID="TextBoxMModel" runat="server"></asp:TextBox>
                         </td>
-                        <td align="left">
-                            &nbsp;</td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style2">
@@ -92,8 +90,7 @@
                         <td class="style3" height="32">
                             <asp:TextBox ID="TextBoxMMaterial" runat="server"></asp:TextBox>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style4">
@@ -101,8 +98,7 @@
                         <td class="style5">
                             <asp:TextBox ID="TextBoxMStandard" runat="server"></asp:TextBox>
                         </td>
-                        <td class="style6">
-                            </td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style4">
@@ -110,8 +106,7 @@
                         <td class="style5">
                             <asp:TextBox ID="TextBoxMUnit" runat="server"></asp:TextBox>
                         </td>
-                        <td class="style6">
-                            </td>
+                        
                     </tr>
                     <tr>
                         <td align="right" class="style2" height="32">
@@ -121,8 +116,7 @@
                             <span style="color: #FF0000">
                             *</span>
                         </td>
-                        <td>
-                            &nbsp;</td>
+                        
                     </tr> 
 
                     </table>
@@ -137,6 +131,8 @@
             
             </td></tr>
     </table>
+ <br />
+<br />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>

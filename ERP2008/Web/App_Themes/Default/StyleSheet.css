@@ -11,3 +11,8 @@
 {
 	color: #2b7dbb;
 }
+#foot
+{
+	position:fixed;
+	bottom:0;
+}

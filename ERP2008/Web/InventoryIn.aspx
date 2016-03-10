@@ -18,11 +18,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
+    <br />
+<br />
     <table align="center" cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td align="center">
-                            入库物料名称：
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            入库物料名称： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:DropDownList ID="DropDownListMName" runat="server"
                             DataSourceID="SqlDataSourceMName" DataTextField="MName" DataValueField="MName" 
                                 onselectedindexchanged="DropDownListMName_SelectedIndexChanged">
@@ -80,7 +81,7 @@
          </tr>
          <tr>
             <td>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
          </tr>
          <tr>
@@ -92,7 +93,7 @@
          </tr>
          <tr>
             <td>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
          </tr>
          <tr>
