@@ -281,6 +281,7 @@ namespace ERP.DAL
 			{
 				strSql.Append(" where "+strWhere);
 			}
+            strSql.Append("ORDER BY MID");
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 

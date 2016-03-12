@@ -228,7 +228,7 @@ namespace ERP.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("select WID,WName,WArea,WAddress,WDescribe ");
-			strSql.Append(" FROM Warehouses ");
+			strSql.Append(" FROM Warehouses ORDER BY WID ");
 			if(strWhere.Trim()!="")
 			{
 				strSql.Append(" where "+strWhere);

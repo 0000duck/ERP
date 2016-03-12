@@ -72,7 +72,7 @@
 <asp:Content ID="Content3" runat="server" 
     contentplaceholderid="ContentPlaceHolderRealContent">
     <div style="height:649px">
-    <img src="img/Default.jpg">
+    <img src="images/首页.jpg">
   </div>
                         
                                             
