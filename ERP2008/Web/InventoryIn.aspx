@@ -18,7 +18,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
-    <div style="height:649px">
+    <div style="height:649px;">
+    <img src="images/采购入库.jpg" />
 <br />
 <br />
 <br />

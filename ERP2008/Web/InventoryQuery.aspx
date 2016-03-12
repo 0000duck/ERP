@@ -11,6 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
+ <img src="images/查看库存.jpg" />
 <br />
 <br />
 <br />

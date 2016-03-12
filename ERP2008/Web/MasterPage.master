@@ -346,8 +346,8 @@ function MM_swapImage() { //v3.0
                                                             <td>
                                                                 <!-- 真的子页面必须实现的部分 -->
                                                                 
-                                                                <asp:ContentPlaceHolder ID="ContentPlaceHolderRealContent" runat="server">
-                                                                </asp:ContentPlaceHolder>
+                                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolderRealContent" runat="server">
+                                                                    </asp:ContentPlaceHolder>
                                                                 
                                                                    <!-- 真的子页面必须实现的部分 end -->
 

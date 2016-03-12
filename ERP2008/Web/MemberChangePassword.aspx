@@ -5,6 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
+ <img src="images/修改密码.jpg" />
 <br />
 <br />
 <table align="center" cellpadding="0" cellspacing="0" class="style1">
