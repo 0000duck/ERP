@@ -1,17 +1,14 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="MaterialsAlter.aspx.cs" Inherits="ERP.Web.MaterialsAlter" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="MaterialsAlter.aspx.cs" Inherits="ERP.Web.MaterialsAlter" Title="ERP-修改物料信息" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .style1
-        {
-            width: 100%;
-        }
-        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
  <img src="images/修改物料信息.jpg" />
+<br />
+<br />
+<br />
 <br />
 <br />
     <table cellspacing="1" class="style1">

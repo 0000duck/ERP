@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>企业邮件处理系统_用户登录</title>
+<title>ERP物料管理系统-登录</title>
 <style type="text/css">
 <!--
 body {

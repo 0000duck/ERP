@@ -1,41 +1,16 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="WarehouseAdd.aspx.cs" Inherits="ERP.Web.WarehouseAdd" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="WarehouseAdd.aspx.cs" Inherits="ERP.Web.WarehouseAdd" Title="ERP-添加新仓库" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .style1
-        {
-            width: 100%;
-        }
-        .style2
-        {
-            width: 207px;
-        }
-        .style3
-        {
-            width: 383px;
-        }
-    .style4
-    {
-        width: 207px;
-        height: 32px;
-    }
-    .style5
-    {
-        width: 383px;
-        height: 32px;
-    }
-    .style6
-    {
-        height: 32px;
-    }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
  <img src="images/添加新仓库.jpg" />
-    <br />
-    <br />
+<br />
+<br />
+<br />
+<br />
+<br />
     <table cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td>

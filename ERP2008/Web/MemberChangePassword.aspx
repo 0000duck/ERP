@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="MemberChangePassword.aspx.cs" Inherits="ERP.Web.MemberChangePassword" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="MemberChangePassword.aspx.cs" Inherits="ERP.Web.MemberChangePassword" Title="ERP-修改密码" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
@@ -6,6 +6,9 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
  <img src="images/修改密码.jpg" />
+<br />
+<br />
+<br />
 <br />
 <br />
 <table align="center" cellpadding="0" cellspacing="0" class="style1">

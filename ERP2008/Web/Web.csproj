@@ -237,19 +237,9 @@
     <Content Include="MasterPage.master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\BlueTheme\Default.css" />
     <Content Include="App_Themes\Default\StyleSheet.css" />
-    <Content Include="App_Themes\Green2Theme\Default.css" />
-    <Content Include="App_Themes\GreenTheme\Default.css" />
-    <Content Include="App_Themes\PurpleTheme\Default.css" />
-    <Content Include="App_Themes\RedTheme\Default.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\BlueTheme\Control.skin" />
-    <Content Include="App_Themes\Green2Theme\Control.skin" />
-    <Content Include="App_Themes\GreenTheme\Control.skin" />
-    <Content Include="App_Themes\PurpleTheme\Control.skin" />
-    <Content Include="App_Themes\RedTheme\Control.skin" />
     <Content Include="Images\001.gif" />
     <Content Include="Images\002.gif" />
     <Content Include="Images\003.gif" />
@@ -330,10 +320,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Thumbs.db" />
-    <None Include="img\2.psd" />
-    <None Include="img\guize2.psd" />
-    <None Include="img\未标题-1.psd" />
-    <None Include="img\未标题-3.psd" />
     <Content Include="Images\background.jpg" />
     <Content Include="Images\Web.config" />
     <Content Include="Images\修改仓库信息.jpg" />
@@ -350,34 +336,10 @@
     <Content Include="Images\生产领料.jpg" />
     <Content Include="Images\采购入库.jpg" />
     <Content Include="Images\销售出库.jpg" />
-    <Content Include="img\1.jpg" />
-    <Content Include="img\13.jpg" />
-    <Content Include="img\14.jpg" />
-    <Content Include="img\15.jpg" />
-    <Content Include="img\16.jpg" />
-    <Content Include="img\17.jpg" />
-    <Content Include="img\2.jpg" />
-    <Content Include="img\3.jpg" />
-    <Content Include="img\4.jpg" />
-    <Content Include="img\5.jpg" />
-    <Content Include="img\6.jpg" />
-    <Content Include="img\7.gif" />
-    <Content Include="img\7.jpg" />
-    <Content Include="img\8.jpg" />
-    <Content Include="img\9.jpg" />
-    <Content Include="img\bg2.jpg" />
-    <Content Include="img\bg3.jpg" />
-    <Content Include="img\Default.jpg" />
-    <Content Include="img\guize1.jpg" />
-    <Content Include="img\guize2.jpg" />
-    <Content Include="img\xuqiu1.jpg" />
-    <Content Include="img\xuqiu2.jpg" />
-    <Content Include="img\未标题-1.jpg" />
-    <Content Include="img\添加货物信息.jpg" />
-    <Content Include="img\货物信息维护.jpg" />
     <Content Include="InventoryIn.aspx" />
     <Content Include="InventoryOut.aspx" />
     <Content Include="InventoryQuery.aspx" />
+    <Content Include="js\Default.js" />
     <Content Include="js\moo.fx.js" />
     <Content Include="js\moo.fx.pack.js" />
     <Content Include="js\prototype.lite.js" />

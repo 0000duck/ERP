@@ -1,17 +1,14 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="RecordsIn.aspx.cs" Inherits="ERP.Web.RecordsIn" Title="无标题页" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="RecordsIn.aspx.cs" Inherits="ERP.Web.RecordsIn" Title="ERP-查看入库信息" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .style1
-        {
-            width: 100%;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
  <img src="images/查看入库信息.jpg" />
+<br />
+<br />
+<br />
 <br />
 <br />
 <table cellpadding="0" cellspacing="0" class="style1">

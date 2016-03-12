@@ -11,8 +11,29 @@
 {
 	color: #2b7dbb;
 }
-#foot
-{
-	position:fixed;
-	bottom:0;
-}
+       .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 207px;
+        }
+        .style3
+        {
+            width: 383px;
+        }
+    .style4
+    {
+        width: 207px;
+        height: 32px;
+    }
+    .style5
+    {
+        width: 383px;
+        height: 32px;
+    }
+    .style6
+    {
+        height: 32px;
+    }
