@@ -169,7 +169,7 @@ function MM_swapImage() { //v3.0
                                 <!--TV图片-->
                                   <tr>
                                       <td valign="top">
-                                      <div align="center">
+                                      <div align="center" style="height:674px">
                                       <!--treeview-->
            <asp:TreeView ID="TreeView1" runat="server" ImageSet="Faq"> 
                                         <ParentNodeStyle Font-Bold="False" />
@@ -316,7 +316,8 @@ function MM_swapImage() { //v3.0
                                                                                             <img src="images/tb.gif" width="16" height="16" /></div>
                                                                                     </td>
                                                                                     <td   >
-                                                                                      你当前的位置 ：SiteMapPath系统管理-数据列表
+                                                                                        <asp:Label ID="LabelERPInfo" runat="server" Text="ERP物料管理系统-宋东林毕业设计" 
+                                                                                            Font-Names="微软雅黑"></asp:Label>
                                                                                     </td>
                                                                                 </tr>
                                                                             </table>

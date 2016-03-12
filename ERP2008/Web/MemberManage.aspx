@@ -10,6 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderOperationMenu" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
+<div style="height:649px">
     <table cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td align="center">
@@ -49,6 +50,7 @@
             </td>
         </tr>
     </table>
+    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>
