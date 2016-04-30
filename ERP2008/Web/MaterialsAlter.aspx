@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
- <img src="images/修改物料信息.jpg" />
+ <!--img src="images/修改物料信息.jpg" /-->
 <br />
 <br />
 <br />
@@ -24,7 +24,7 @@
                     onrowcancelingedit="GridView1_RowCancelingEdit" 
                     onrowdeleting="GridView1_RowDeleting" onrowediting="GridView1_RowEditing" 
                     onrowupdating="GridView1_RowUpdating" DataKeyNames="MID" CellPadding="4" 
-                    Font-Size="X-Large" ForeColor="#333333" HorizontalAlign="Center" AllowPaging="True" 
+                    Font-Size="Small" ForeColor="#333333" HorizontalAlign="Center" AllowPaging="True" 
                     onpageindexchanging="GridView1_PageIndexChanging" PageSize="5" 
                 GridLines="None">
                     <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />

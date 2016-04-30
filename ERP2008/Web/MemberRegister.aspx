@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
- <img src="images/注册新用户.jpg" />
+ <!--img src="images/注册新用户.jpg" /-->
 <br />
 <br />
 <br />
@@ -16,7 +16,7 @@
         <td align="center">
             <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" BackColor="#F7F6F3" 
         BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="1px" 
-        Font-Names="Verdana" Font-Size="XX-Large">
+        Font-Names="Verdana" Font-Size="Medium">
         <SideBarStyle BackColor="#5D7B9D" BorderWidth="0px" Font-Size="0.9em" 
             VerticalAlign="Top" />
         <SideBarButtonStyle BorderWidth="0px" Font-Names="Verdana" ForeColor="White" />

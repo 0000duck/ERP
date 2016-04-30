@@ -53,7 +53,6 @@ namespace ERP.Web
                 modelRecords.RTime = Convert.ToDateTime(DateTime.Now.Date.ToString("yyyy-MM-dd"));
 
                 //给Materials的model赋值
-                //DataRow dw = bllMaterials.GetList(strWhere).Tables[0].Rows[0];
                 modelMaterials.MID = Convert.ToInt32(dw[0]);
                 modelMaterials.MCode = Convert.ToInt32(dw[1]);
                 modelMaterials.MName = dw[2].ToString();
@@ -94,14 +93,13 @@ namespace ERP.Web
 
         protected void DropDownListMName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //先根据选择刷新表->根据选择，点查询后在刷新表
-            //LoadList();
+            LoadList();
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             GridView1.PageIndex = e.NewPageIndex;
-            //LoadList();
+            LoadList();
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)

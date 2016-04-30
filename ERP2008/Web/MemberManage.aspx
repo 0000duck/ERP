@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
- <img src="images/查看所有用户.jpg" />
+ <!--img src="images/查看所有用户.jpg" /-->
  <br />
 <br />
 <br />
@@ -20,7 +20,7 @@
                                 CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" 
                                 onpageindexchanging="GridView1_PageIndexChanging" 
                                 onrowdatabound="GridView1_RowDataBound" PageSize="5" 
-                    Font-Size="X-Large">
+                    Font-Size="Medium">
                                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                                 <Columns>
                         <asp:BoundField DataField="UserId" HeaderText="用户ID" >

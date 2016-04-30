@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderRealContent" runat="server">
 <div style="height:649px">
- <img src="images/修改密码.jpg" />
+ <!--img src="images/修改密码.jpg" /-->
 <br />
 <br />
 <br />
@@ -16,7 +16,7 @@
         <td align="center">
     <asp:ChangePassword ID="ChangePassword1" runat="server" BackColor="#F7F6F3" 
         BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" 
-        Font-Names="Verdana" Font-Size="XX-Large">
+        Font-Names="Verdana" Font-Size="Medium">
         <CancelButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" 
             BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" 
             ForeColor="#284775" />
@@ -39,6 +39,7 @@
 <br />
 <br />
 <div style="height:649px">
+    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderBottomNav" runat="server">
 </asp:Content>
